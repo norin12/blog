@@ -1,0 +1,120 @@
+#blog-section {
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    background: #F9F9F9;
+
+    .blog-title {
+        text-align: center;
+
+        p {
+            font-size: 22px;
+            text-transform: capitalize;
+            color: #FF8F2D;
+
+            
+
+
+        }
+        h2 {
+            font-size: 50px;
+            text-transform: capitalize;
+            margin: 15px 0;
+            color: #333;
+        }
+    }
+    .single-blog {
+        margin-top: 60px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+        // grid-template-rows: repeat();
+        grid-gap: 30px;
+        .single-blog-items {
+
+            .img-thumb {
+                position: relative;
+                margin-bottom: 0;
+                // background: #000;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    position: relative;
+                    // transform: scale(1);
+
+                    // &::after {
+                    //     content: '';
+                    //     position: absolute;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background: #000;
+                    //     left: 0;
+                    //     top: 0;
+                    //     z-index: 1;
+                    // }
+                }
+
+            }
+
+            .blog-content {
+                // margin: 15px 0;
+                margin-top: 0;
+                padding:15px 10px;
+                background: #fff;
+
+                span.tech {
+                    background: green;
+                    color: #fff;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                }
+                span.sci {
+                    @extend .tech;
+                    background: red;
+                }
+                span.agr {
+                    @extend .tech;
+                    background: orange;
+                }
+
+                h3 {
+                    font-size: 23px;
+                    text-transform: capitalize;
+                    margin: 8px 0;
+                    color: #333;
+                }
+                p {
+                    color: #7B828A;
+                    font-size: 18px;
+                }
+            }
+
+            .published {
+                background: #fff;
+                // margin-top: 10px;
+                padding:10px 10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    color: #333;
+                    font-size: 18px;
+
+                    .color {
+                        color: #208CFF;
+                        // font-weight: bold;
+                    }
+                }
+                
+            }
+            hr {
+                // padding: 10px 0;
+                color: #E6E6E6;
+                width: 95%;
+                margin: auto;
+            }
+        }
+    }
+}

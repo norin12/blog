@@ -1,0 +1,69 @@
+#about-section {
+    width: 100%;
+    height: auto;
+    margin: 120px 0;
+
+    .about-overview {
+        width: 100%;
+        // height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .single-about {
+            .img-thumbnail {
+                img {
+                    width: 100%;
+                }
+            }
+            .about-text {
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                    color: #333;
+                    position: relative;
+                    z-index: 1;
+                    &::after {
+                        content: 'About Me';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: -30%;
+                        font-size: 60px;
+                        z-index: -1;
+                        color: #ddd;
+                    }
+                   
+                }
+                
+                h3 {
+                    font-size: 25px;
+                    color: #111;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 1.3;
+                    margin: 10px 0;
+                    color: #333;
+                }
+                .btn {
+                    // border: 1.5px solid #333;
+                    padding: 8px 12px;
+                    color: #fff;
+                    background: #000;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    display: inline-block;
+                }
+            }
+        }
+        .abt-img {
+            flex-basis: 35%;
+        }
+        .abt-txt {
+            flex-basis: 55%;
+        }
+    }
+}

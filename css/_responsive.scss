@@ -1,0 +1,96 @@
+@media screen and (max-width:992px) {
+    header {
+        nav {
+            .menu {
+            flex-basis: 57%;
+         
+    }
+}
+    }
+
+    #service {
+        .row {
+            .col {
+                margin-bottom: 10px;
+                // flex-basis: 230px;
+                .single-services {
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    #about-section .about-overview {
+       
+        justify-content: center;
+       
+    }
+    #about-section .about-overview .abt-img {
+        flex-basis: 80%;
+    }
+    #about-section .about-overview .abt-txt {
+        flex-basis: 80%;
+        margin-top: 30px;
+    }
+
+    #blog-section .single-blog {
+        
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        
+    }
+}
+@media screen and (max-width:768px) {
+    header {
+        nav {
+            .menu {
+            display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+.hero-section {
+    h3 {
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+}
+#service {
+    .row {
+        .col {
+            flex-basis: 250px;
+            .single-services {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+#about-section .about-overview .abt-img {
+    flex-basis: 100%;
+}
+#about-section .about-overview .abt-txt {
+    flex-basis: 100%;
+    // margin-top: 30px;
+}
+}
+
+@media screen and (max-width:576px) {
+    #service {
+        .row {
+            .col {
+                flex-basis: 100%;
+                .single-services {
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

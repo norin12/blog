@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 92%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+header nav {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #000;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  flex-basis: 30%;
+}
+header nav .logo a {
+  color: #fff;
+  font-size: 35px;
+}
+header nav .menu {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .menu li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  transition: 0.5s all ease;
+}
+header nav .menu li a:hover {
+  color: green;
+}
+header nav .mobile {
+  display: none;
+}
+header nav .mobile span {
+  font-size: 40px;
+  color: #fff;
+}
+header .hero-section {
+  width: 100%;
+  position: relative;
+  height: calc(100% - 83px);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+header .hero-section .row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .hero-section h3 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+header .hero-section p {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+
+#service {
+  width: 100%;
+  position: relative;
+  margin: 60px 0;
+}
+#service .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#service .row .col {
+  flex-basis: 270px;
+}
+#service .row .col .single-services {
+  border: 1.5px solid #ccc;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+#service .row .col .single-services h2, #service .row .col .single-services #overview .overview-txt p, #overview .overview-txt #service .row .col .single-services p {
+  color: #111;
+  font-size: 24px;
+}
+#service .row .col .single-services p {
+  margin: 10px 0;
+  color: #576574;
+}
+#service .row .col .single-services button {
+  margin-top: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #333;
+  border: 2px solid #111;
+  outline: 0;
+  border-radius: 30px;
+}
+
+#about-section {
+  width: 100%;
+  height: auto;
+  margin: 120px 0;
+}
+#about-section .about-overview {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#about-section .about-overview .single-about .img-thumbnail img {
+  width: 100%;
+}
+#about-section .about-overview .single-about .about-text h2, #about-section .about-overview .single-about .about-text #overview .overview-txt p, #overview .overview-txt #about-section .about-overview .single-about .about-text p {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+#about-section .about-overview .single-about .about-text h2::after, #about-section .about-overview .single-about .about-text #overview .overview-txt p::after, #overview .overview-txt #about-section .about-overview .single-about .about-text p::after {
+  content: "About Me";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -30%;
+  font-size: 60px;
+  z-index: -1;
+  color: #ddd;
+}
+#about-section .about-overview .single-about .about-text h3 {
+  font-size: 25px;
+  color: #111;
+}
+#about-section .about-overview .single-about .about-text p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 10px 0;
+  color: #333;
+}
+#about-section .about-overview .single-about .about-text .btn {
+  padding: 8px 12px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 15px;
+  display: inline-block;
+}
+#about-section .about-overview .abt-img {
+  flex-basis: 35%;
+}
+#about-section .about-overview .abt-txt {
+  flex-basis: 55%;
+}
+
+#overview {
+  width: 100%;
+  position: relative;
+  background: url(../img/foodbg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 100px 0;
+  z-index: 1;
+  text-align: center;
+}
+#overview::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+#overview .overview-txt h2, #overview .overview-txt p {
+  color: #fff;
+  font-size: 45px;
+}
+#overview .overview-txt p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+#overview .overview-txt button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 0;
+  background: #f00;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#blog-section {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+#blog-section .blog-title {
+  text-align: center;
+}
+#blog-section .blog-title p {
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #FF8F2D;
+}
+#blog-section .blog-title h2, #blog-section .blog-title #overview .overview-txt p, #overview .overview-txt #blog-section .blog-title p {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin: 15px 0;
+  color: #333;
+}
+#blog-section .single-blog {
+  margin-top: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+#blog-section .single-blog .single-blog-items .img-thumb {
+  position: relative;
+  margin-bottom: 0;
+}
+#blog-section .single-blog .single-blog-items .img-thumb img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+#blog-section .single-blog .single-blog-items .blog-content {
+  margin-top: 0;
+  padding: 15px 10px;
+  background: #fff;
+}
+#blog-section .single-blog .single-blog-items .blog-content span.tech, #blog-section .single-blog .single-blog-items .blog-content span.agr, #blog-section .single-blog .single-blog-items .blog-content span.sci {
+  background: green;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+#blog-section .single-blog .single-blog-items .blog-content span.sci {
+  background: red;
+}
+#blog-section .single-blog .single-blog-items .blog-content span.agr {
+  background: orange;
+}
+#blog-section .single-blog .single-blog-items .blog-content h3 {
+  font-size: 23px;
+  text-transform: capitalize;
+  margin: 8px 0;
+  color: #333;
+}
+#blog-section .single-blog .single-blog-items .blog-content p {
+  color: #7B828A;
+  font-size: 18px;
+}
+#blog-section .single-blog .single-blog-items .published {
+  background: #fff;
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#blog-section .single-blog .single-blog-items .published span {
+  color: #333;
+  font-size: 18px;
+}
+#blog-section .single-blog .single-blog-items .published span .color {
+  color: #208CFF;
+}
+#blog-section .single-blog .single-blog-items hr {
+  color: #E6E6E6;
+  width: 95%;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  header nav .menu {
+    flex-basis: 57%;
+  }
+  #service .row .col {
+    margin-bottom: 10px;
+  }
+  #service .row .col .single-services h2, #service .row .col .single-services #overview .overview-txt p, #overview .overview-txt #service .row .col .single-services p {
+    font-size: 20px;
+  }
+  #about-section .about-overview {
+    justify-content: center;
+  }
+  #about-section .about-overview .abt-img {
+    flex-basis: 80%;
+  }
+  #about-section .about-overview .abt-txt {
+    flex-basis: 80%;
+    margin-top: 30px;
+  }
+  #blog-section .single-blog {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav .menu {
+    display: none;
+  }
+  header nav .mobile {
+    display: block;
+  }
+  header .hero-section h3 {
+    font-size: 40px;
+  }
+  header .hero-section p {
+    font-size: 18px;
+  }
+  #service .row .col {
+    flex-basis: 250px;
+  }
+  #service .row .col .single-services h2, #service .row .col .single-services #overview .overview-txt p, #overview .overview-txt #service .row .col .single-services p {
+    font-size: 20px;
+  }
+  #about-section .about-overview .abt-img {
+    flex-basis: 100%;
+  }
+  #about-section .about-overview .abt-txt {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #service .row .col {
+    flex-basis: 100%;
+  }
+  #service .row .col .single-services h2, #service .row .col .single-services #overview .overview-txt p, #overview .overview-txt #service .row .col .single-services p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
